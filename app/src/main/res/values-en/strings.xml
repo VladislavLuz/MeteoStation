@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="city_name">Saint-Peterburg</string>
+    <string name="altitude">Altitude above sea level</string>
+    <string name="weather_sunny">Sunny</string>
+    <string name="weather_cloudy">Cloudy</string>
+    <string name="weather_rain">Rain</string>
+    <string name="weather_snow">Snow</string>
+    <string name="weather_storm">Storm</string>
+    <string name="weather_thunder">Thunder</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="temperature">Temperature</string>
+    <string name="splash_title">MeteoStation\nSPBEU</string>
+    <string name="splash_copyrights">Made by\nBI-2102</string>
+    <string name="toast_message">Data cannot be updated! Try again later</string>
+    <string name="close">Close</string>
+    <string name="toast_title">Error!</string>
+</resources>

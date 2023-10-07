@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1"
+    android:background="@drawable/background_img"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/tempValueTV"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="0°"
+        android:textColor="#FFFFFF"
+        android:textSize="65sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weatherImg" />
+
+    <TextView
+        android:id="@+id/cityTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="@string/city_name"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lineHeight="14px" />
+
+    <ImageButton
+        android:id="@+id/syncButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:alpha="1"
+        android:background="@drawable/sync_but"
+        app:layout_constraintBottom_toBottomOf="@+id/cityTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toEndOf="@+id/cityTV"
+        app:layout_constraintTop_toTopOf="@+id/cityTV"
+        app:srcCompat="@drawable/ic_sync"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/weather_cloudy"
+        android:textColor="#DEDDDD"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/cityTV"
+        app:layout_constraintStart_toStartOf="@+id/cityTV"
+        app:layout_constraintTop_toBottomOf="@+id/cityTV"
+        app:lineHeight="17px" />
+
+    <ImageView
+        android:id="@+id/weatherImg"
+        android:layout_width="180dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWeather"
+        app:srcCompat="@drawable/weather_icon_cloudy" />
+
+    <TextView
+        android:id="@+id/DateInfoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Пятница, 26 августа 2022 | 10:00"
+        android:textColor="#DEDDDD"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempValueTV"
+        app:lineHeight="17px" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/background_view_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateInfoTV" />
+
+    <ImageView
+        android:id="@+id/humidityImg"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.890"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/humidity_icon" />
+
+    <TextView
+        android:id="@+id/humidityValueTV"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/humidityImg"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/humidityImg"
+        app:layout_constraintTop_toBottomOf="@+id/humidityImg"
+        app:lineHeight="21sp" />
+
+    <TextView
+        android:id="@+id/humidityTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/humidity"
+        android:textColor="#99FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/humidityValueTV"
+        app:layout_constraintStart_toStartOf="@+id/humidityValueTV"
+        app:layout_constraintTop_toBottomOf="@+id/humidityValueTV"
+        app:lineHeight="18sp" />
+
+    <TextView
+        android:id="@+id/pressureValueTV"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/pressureImg"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/pressureImg"
+        app:layout_constraintTop_toBottomOf="@+id/pressureImg"
+        app:lineHeight="21sp" />
+
+    <TextView
+        android:id="@+id/altitudeValueTV"
+        android:layout_width="35dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/altitudeImg"
+        app:layout_constraintStart_toStartOf="@+id/altitudeImg"
+        app:layout_constraintTop_toBottomOf="@+id/altitudeImg"
+        app:lineHeight="21sp" />
+
+    <TextView
+        android:id="@+id/pressureTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/pressure"
+        android:textColor="#99FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/pressureValueTV"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/pressureValueTV"
+        app:layout_constraintTop_toBottomOf="@+id/pressureValueTV"
+        app:lineHeight="18sp" />
+
+    <TextView
+        android:id="@+id/altitudeTV"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="@string/altitude"
+        android:textColor="#99FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/altitudeValueTV"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/altitudeValueTV"
+        app:layout_constraintTop_toBottomOf="@+id/altitudeValueTV"
+        app:lineHeight="12sp" />
+
+    <ImageView
+        android:id="@+id/pressureImg"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/pressure_icon" />
+
+    <ImageView
+        android:id="@+id/altitudeImg"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/altitude_icon" />
+
+    <EditText
+        android:id="@+id/ipEDT"
+        android:layout_width="192dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter IP"
+        android:inputType="number|text"
+        android:textColorHint="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/altitudeTV" />
+
+    <ImageButton
+        android:id="@+id/ipSaveButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/sync_but"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ipEDT"
+        app:layout_constraintStart_toEndOf="@+id/ipEDT"
+        app:layout_constraintTop_toTopOf="@+id/ipEDT"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_checkip" />
+
+    <ImageButton
+        android:id="@+id/settingBut"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/sync_but"
+        android:onClick="getSetting"
+        app:layout_constraintEnd_toEndOf="@+id/syncButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/syncButton"
+        app:layout_constraintTop_toBottomOf="@+id/syncButton"
+        app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

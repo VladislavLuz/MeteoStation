@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name" translatable="false">MeteoStation</string>
+    <string name="city_name">Санкт-Петербург</string>
+    <string name="light" translatable="false">Light</string>
+    <string name="temperature">Температура</string>
+    <string name="humidity">Влажность</string>
+    <string name="pressure">Давление</string>
+    <string name="altitude">Высота над уровнем моря</string>
+    <string name="weather_sunny">Ясно</string>
+    <string name="weather_cloudy">Облачно</string>
+    <string name="weather_rain">Дождь</string>
+    <string name="weather_snow">Снег</string>
+    <string name="weather_storm">Шторм</string>
+    <string name="weather_thunder">Гром</string>
+    <string name="splash_title">Метеостанция\nСПбГЭУ</string>
+    <string name="splash_copyrights">Сделано\nБИ-2102</string>
+    <string name="toast_title">Ошибка!</string>
+    <string name="toast_message">Невозможно обновить данные!\nПопробуйте позже</string>
+    <string name="close">Закрыть</string>
+</resources>
